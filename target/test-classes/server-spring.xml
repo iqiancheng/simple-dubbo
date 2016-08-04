@@ -11,14 +11,6 @@
 
     <context:property-placeholder location="classpath:rpc.properties"/>
 
-    <bean id="serviceDiscovery" class="com.spencer.registry.ServiceDiscovery">
-        <constructor-arg name="registryAddress" value="${registry.address}"/>
-    </bean>
-
-    <bean id="rpcClient" class="com.spencer.client.RpcClient">
-        <constructor-arg name="serviceDiscovery" ref="serviceDiscovery"/>
-    </bean>
-
     <bean id="serviceRegistry" class="com.spencer.registry.ServiceRegistry">
         <constructor-arg name="registryAddress" value="${registry.address}"/>
     </bean>

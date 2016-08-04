@@ -1,9 +1,7 @@
 package com.spencer.client;
 
 import com.spencer.core.IAsyncObjectProxy;
-import com.spencer.proxy.AsyncObjectService;
 import com.spencer.proxy.ObjectProxy;
-import com.spencer.proxy.ServiceProxy;
 import com.spencer.registry.ServiceDiscovery;
 
 import java.lang.reflect.Proxy;
